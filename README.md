@@ -1,5 +1,4 @@
 ## Adapter Pattern - Payment Gateway Example
-
 ## Problem
 
 Different payment services like PayPal and Stripe use different methods and formats. Our system, however, expects payments to be handled in one fixed way. Calling each gateway directly would make the code complex and hard to maintain.

@@ -1,4 +1,4 @@
-# Adapter Pattern - Payment Gateway Example
+## Adapter Pattern - Payment Gateway Example
 
 ## Problem
 

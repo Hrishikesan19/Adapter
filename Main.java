@@ -1,11 +1,9 @@
-
-
 public class Main {
     public static void main(String[] args) {
-        Charger laptopCharger = new TwoPinAdapter(new TwoPinPlug());
-        laptopCharger.charge("Laptop");
+        PaymentProcessor paypal = new PayPalAdapter(new PayPalGateway());
+        paypal.processPayment(150.0);
 
-        Charger phoneCharger = new UsbCAdapter(new UsbCPlug());
-        phoneCharger.charge("Phone");
+        PaymentProcessor stripe = new StripeAdapter(new StripeGateway());
+        stripe.processPayment(200.0);
     }
 }
